@@ -2,7 +2,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Scanner;
 
-public class Project0 {
+public class Navigation {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class Project0 {
 
     public static RoadNetwork readGraph(String filename)
     {
-        InputStream is = Project0.class.getResourceAsStream(filename);
+        InputStream is = Navigation.class.getResourceAsStream(filename);
         if (is == null) {
             System.err.println("Bad filename: " + filename);
             System.exit(1);
